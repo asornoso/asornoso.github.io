@@ -1,9 +1,10 @@
 const animate = () => {
+  //Animate star dvis
   anime({
     targets: '.stars',
     duration: 700,
-    delay: anime.stagger(10),
-    scale: [1, 1.5, 1],
+    delay: anime.stagger(7),
+    scale: [1, 1.6, 1],
     loop: true
   })
 
@@ -11,6 +12,7 @@ const animate = () => {
   if(window.innerWidth < 600)
     slideY = 42
 
+  //Animate header coming in from top
   anime({
     targets: ['#header #upper', '#header #lower' ],
     duration: 1000,
@@ -19,6 +21,7 @@ const animate = () => {
     easing: 'easeInOutQuad'
   })
 
+  //Animate SVG paths
   anime({
     targets: 'path',
     strokeDashoffset: [anime.setDashoffset, 0],
@@ -35,6 +38,7 @@ const animate = () => {
 
   })
 
+  //Animate grid items displaying
   anime({
     targets: '.grid-item',
     duration: 500,
