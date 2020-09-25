@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body {
+  font-family: 'Epilogue', sans-serif;
+
+  background-color: #090A0A  ;
+  color: #ffffff;
+  margin:0;
+  min-width:350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#header{
+  width:100vw;
+  height: 20vh;
+  min-height: 7em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff ;
+  background-color: transparent;
+}
+
+#upper {
+  font-size: 3em;
+}
+
+#lower {
+  margin-top:0.5em;
+  font-size: 1.5em;
+}
+
+#grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+  max-width: 1950px;
+  background-color: transparent;
+}
+
+
+.grid-item-wrapper {
+  position:relative;
+  margin: 1em;
+  width: 15em;
+  height: 4em;
+  font-size: 1.7em;
+  z-index:5;
+}
+
+.grid-item{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: transparent  ;
+}
+
+
+.grid-item-header {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+#bg-wrapper{
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100vw;
+  height:100vh;
+  z-index: -5;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #header{
+    height: 15vh;
+  }
+  #grid{
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+
+  #upper{
+    font-size: 2em;
+  }
+  #lower{
+    font-size: 1em;
+  }
+
+  #grid{
+    width: 98vw;
+  }
+
+  .grid-item-wrapper{
+    width: 20em;
+    font-size: 1.5em;
+
+  }
+
+
+}
