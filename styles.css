@@ -20,9 +20,8 @@ a{
 }
 
 #header{
-  width:100vw;
   height: 20vh;
-  min-height: 7em;
+    min-height: 12em;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff ;
@@ -77,8 +76,7 @@ a{
 
 #bg-wrapper{
   position: fixed;
-  top:0;
-  left: 0;
+
   width:100vw;
   height:100vh;
   z-index: -5;
@@ -88,6 +86,8 @@ a{
 @media only screen and (max-width: 1200px) {
   #header{
     height: 15vh;
+    min-height: 9em;
+
   }
   #grid{
     width: 95vw;
