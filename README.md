@@ -1,2 +1,2 @@
 # asornoso.github.io
-Adam Sornoso's Site Portfolio
+Adam Sornoso's Portfolio Site
